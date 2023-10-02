@@ -1,0 +1,22 @@
+// paralelo con mis notas respecto al video 
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+    <meta charset=" UTF-8">
+    <meta name=" viewport" content="width-device-width, initial-scale-1.0">
+    <title><%= titulo %> </title>
+</head>
+<body> 
+     <%- include ('navbar') %>
+    
+    <h1> hola server </h1>
+    <ul>
+      <% allforos.forEach(function(foro){ %>
+        <%- include ('foro', {foro}) %> 
+      <% }); %>
+    </ul>
+  
+    <h2>  buscando error </h2>
+     <%-include ('footer') %>
+</body>
+</html>
